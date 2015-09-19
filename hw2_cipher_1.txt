@@ -1,0 +1,5 @@
+3 28 ff 31 19 ac 55 2e a0 21 cb 32 62 cd 69 40 65 3e 44 d4 8d 22 84 21 a5 b2 d5 a b9 a7 41 5b d8 fe a9 dd 6a 57 8 d4 d8 29 61 d8 68 36 41 bc d 3d 91 4e 3f 11 87 71 b9 a8 77 ae bb 28 38 f8 74 76 b 8a 8f bd 4d ca a3 4c 39
+
+Finally, the list type allows you to quickly reverse the order of the list.
+
+11 29 f4 70 14 b0 5c 67 ee 31 83 3a 27 d5 68 5c 75 3e 51 c9 99 34 84 21 e9 ad d3 13 ad eb 5d 14 c4 aa b8 df 6a 52 12 9d cf 2a 68 81 2d 2a 40 ea 7 29 c2 5f 77 0 cf 78 f0 b4 71 e4
