@@ -1,0 +1,11 @@
+this module provides everything you need to know about getting started with the Java programming language.
+
+a platform is the hardware or software environment in which a program runs.
+
+it is the base for the Java platform and is ported onto various hardware-based platforms.
+
+we can not promise you fame, fortune, or even a job if you learn the Java programming language.
+
+an object is a software bundle of related state and behavior.
+
+inheritance provides a powerful and natural mechanism for organizing and structuring your software.
