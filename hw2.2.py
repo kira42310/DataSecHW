@@ -19,35 +19,34 @@ text = [['ea','9d','aa','4b','be','da','3a','bf','a8','9a','27','cb','b0','5e','
 def XorHex(hex1,hex2):
     return "{:02x}".format((int(hex1,16) ^ int(hex2,16)))
 
-def Decryp(t1, t2, word):
-    c = 0
-    if (len(text[t1]) < len(text[t2])): c = len(text[t1]) - len(word)
-    else: c = len(text[t2]) - len(word)
-    for j in range(0,c):
-        tmp1 = ''
-        for i in range(0,len(word)):
-            tmp1 += XorHex(XorHex(text[t1][j+i],text[t2][j+i]),word[i])
-        print(t1,t2,j,binascii.unhexlify(tmp1))
-    print('')
+#def Decryp(t1, t2, word):
+#    c = 0
+#    if (len(text[t1]) < len(text[t2])): c = len(text[t1]) - len(word) + 1
+#    else: c = len(text[t2]) - len(word) + 1
+#    for j in range(0,c):
+#        tmp1 = ''
+#        for i in range(0,len(word)):
+#            tmp1 += XorHex(XorHex(text[t1][j+i],text[t2][j+i]),word[i])
+#        print(t1,t2,j,binascii.unhexlify(tmp1))
+#    print('')
 
-[t1, t2, iword] = input().split(',')
-#iword = input('Insert word: ')
+#[t1, t2, iword] = input().split(',')
+iword = input('Insert word: ')
 hiword = ["{:02x}".format(ord(c)) for c in iword ]
-Decryp(int(t1),int(t2),hiword)
+#Decryp(int(t1),int(t2),hiword)
 
 #posiword = []
-#for k in range(0,5):
+for k in range(0,6):
 #    tmp = []
-#k = 0
-#e = 5
-#c = 0
-#if (len(text[k]) < len(text[e])): c = len(text[k]) - len(hiword)
-#else: c = len(text[e]) - len(hiword)
-#for j in range(0,c):
-#    tmp1 = ''
-#    for i in range(0,len(hiword)):
-#        tmp1 += XorHex(XorHex(text[k][j+i],text[e][j+i]),hiword[i])
-#    print(k,e,j,binascii.unhexlify(tmp1))
+    for e in range(k+1,6):
+        c = 0
+        if (len(text[k]) < len(text[e])): c = len(text[k]) - len(hiword)
+        else: c = len(text[e]) - len(hiword)
+        for j in range(0,c):
+            tmp1 = ''
+            for i in range(0,len(hiword)):
+                tmp1 += XorHex(XorHex(text[k][j+i],text[e][j+i]),hiword[i])
+            print(k,e,j,binascii.unhexlify(tmp1))
 #print('')
 #    posiword.append(tmp)
 
