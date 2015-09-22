@@ -1,0 +1,1 @@
+The append method adds a single item to the end of the list.
